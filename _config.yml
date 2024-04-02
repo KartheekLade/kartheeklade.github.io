@@ -1,0 +1,65 @@
+# Setup
+title: "Adventure >>"
+description: >
+  Blog to rec'rd mine adventure through life and w'rk as
+  automotive embedd'd software blacksmith. Shall writeth about things yond i hath used
+  to w'rk 'r int'rest'd in.
+tagline: "let's run.."
+url: https://kartheeklade.github.io
+paginate: 5
+baseurl: ""
+permalink: :title/
+
+kramdown:
+    footnote_backlink: "&#10548;"
+
+# Gems
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-target-blank
+
+# Optimize Jekyll
+exclude:
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+include: ['_pages'] # customize pages folder
+# Options
+
+# Replace this value and uncomment to enable Google Analytics tracking
+#ga_analytics: G-XW85PW7JTE
+
+# Specify the author for blog posts
+author:
+  name: Blurred Byte
+  url: https://twitter.com/blurredbyte
+  email: blurredbyte@gmail.com
+
+avatar: /assets/img/pikafe.jpg
+
+social:
+  name: Blurred Byte
+  email: blurredbyte@gmail.com
+  twitter: blurredbyte
+  facebook: blurredbyte
+  github: kartheeklade
+  linkedin: blurredbyte
+
+timezone : Asia/Kolkata
+
+# Custom vars
+version: 1.0.0
+github:
+  repo: https://github.com/kartheeklade
+server: puma
+
