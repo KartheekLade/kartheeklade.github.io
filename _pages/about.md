@@ -34,12 +34,3 @@ title: About
 1. [CANalyse 2.0 ](https://github.com/canalyse/CANalyse-2.0)
 
 **Contact info:** [mail](mailto:contact@kartheeklade.com) - [linkedin](https://www.linkedin.com/in/Kartheeklade/)  
-
-<figure>
-  <img src="/assets/img/bon-fire-bro.jpg" alt="Testing">
-  <figcaption>This page is under construction, here have a image</figcaption>
-</figure>
-
-<p class="message">
-  {{site.description}}
-</p>
