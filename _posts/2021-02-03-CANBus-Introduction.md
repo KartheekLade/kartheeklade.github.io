@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Controller Area Network (ISO 11898)
-date: 2020-04-07 00:00:00
+date: 2021-02-03 00:00:00
 categories: [CAN]
 tags: [protocol]
 last_modified_at: 2021-02-03
