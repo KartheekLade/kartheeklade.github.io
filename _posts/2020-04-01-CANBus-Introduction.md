@@ -86,7 +86,7 @@ There are two types of CAN packets: standard and extended.
 
 <figure>
   <img src="assets\img\blogs\2021_02_03\standard CAN messgae.webp"
-  alt=>
+  alt="Standatd and Extended CAN Message">
 </figure>
 
 The frame format is as follows on from here in the table below:
@@ -124,7 +124,7 @@ we should remember that it is not like any Master-slave communication, literally
 
 <figure>
   <img src="assets\img\blogs\2021_02_03\ethernet CSMA.webp"
-  alt=>
+  alt="Ethernet CSMA">
 </figure>
 
 For example in a computer network connected with Ethernet the {CSMA/CD} carrier sense, multiple access with collision detection will be In charge if there is a collision it stops the transmission of data and starts again after some time.
@@ -138,8 +138,8 @@ CAN bus also has two different types of network’s High speed CAN bus which sup
 CAN bus network is also a completely centralised network, this makes it flexible to add new nodes and run diagnostics from one point of the network. The fully centralized network with efficiency and robustness in transmitting essential data makes it practical to be used in vehicles and industrial machinery widely across different industries like Heavy duty fleet telematics, Airplanes, manufacturing plants and medical equipment.
 
 <figure>
-  <img src="assets\img\blogs\2021_02_03\assets\img\blogs\2021_02_03\collision avoidance in CAN.webp"
-  alt=>
+  <img src="assets\img\blogs\2021_02_03\collision avoidance in CAN.webp"
+  alt="collison avoidance in CAN">
 </figure>
 
 Here, two nodes will start pushing the messages without acknowledging other nodes activity meanwhile it also reads the data from the bus, in the above case both nodes 1 &3 pushes their arbitration id’s and in the meantime when node 3 sends a recessive bit (1) and observes dominant bit (0) it will stop transmitting messages and waits for some time and starts again. there will be different clock speeds for each node to avoid the mess in the network.
