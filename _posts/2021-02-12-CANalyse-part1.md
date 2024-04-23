@@ -30,7 +30,7 @@ requirements.txt is already provided in the repository and by running the above 
 Once you install the requirements and run the tool it should open a menu like this
 
 <figure>
-  <img src="assets\img\blogs\2021-02-12\starting the tool.gif">
+  <img src="\assets\img\blogs\2021-02-12\starting the tool.gif">
 </figure>
 
 You have four options,
@@ -44,14 +44,14 @@ You have four options,
 “ CANalyse menu ”
 
 <figure>
-  <img src="assets\img\blogs\2021-02-12\CANalyse options.webp">
+  <img src="\assets\img\blogs\2021-02-12\CANalyse options.webp">
 </figure>
 
 in the CANalyse menu, you can manually record the source and attack files and analyse them. once you navigate to the “ Play payload “ option you can see all the IDs present in the payload.log on the screen. at this point, you can also play the specific ID from the payload log file also.
 
 
 <figure>
-  <img src="assets\img\blogs\2021-02-12\payload play options.webp">
+  <img src="\assets\img\blogs\2021-02-12\payload play options.webp">
 </figure>
 
 All that we have done manually can also be done over the internet(telegram). Yep, that's the cool part of the tool. Let’s get started with that, to do that navigate back to the “ Main menu ”.
@@ -62,26 +62,26 @@ once you go to the second option you will be asked to give an “ API token ”.
 
 
 <figure>
-  <img src="assets\img\blogs\2021-02-12\Telegram API token.webp">
+  <img src="\assets\img\blogs\2021-02-12\Telegram API token.webp">
 </figure>
 
 Once you enter your bot “ HTTP API ” ID and it is connected it will show something like this on your terminal.
 
 <figure>
-  <img src="assets\img\blogs\2021-02-12\bot connection with tool.webp">
+  <img src="\assets\img\blogs\2021-02-12\bot connection with tool.webp">
 </figure>
 
 at this point, the tool has successfully connected with your telegram bot and you can go to your bot on telegram and start to see the menu. the menu displays all the functions which can be used through the telegram bot and the data input format.
 
 <figure>
-  <img src="assets\img\blogs\2021-02-12\response on telegram.webp">
+  <img src="\assets\img\blogs\2021-02-12\response on telegram.webp">
 </figure>
 
 if you can see the menu it confirms that your bot can communicate with the tool, now lets hover to the seetings menu
 
 
 <figure>
-  <img src="assets\img\blogs\2021-02-12\CANalyse settings.webp">
+  <img src="\assets\img\blogs\2021-02-12\CANalyse settings.webp">
 </figure>
 
 Comm_channel: you can change the communication protocol.
