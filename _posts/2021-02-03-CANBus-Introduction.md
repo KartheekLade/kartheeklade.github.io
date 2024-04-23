@@ -18,7 +18,7 @@ The automobile industry uses many protocols in modernized vehicles with embedded
 </figure>
 
 <figure>
-  <img src="assets\img\blogs\2021_02_03\after_can_bus.webp" 
+  <img src="assets/img/blogs/2021_02_03/after_can_bus.webp" 
   alt="with CANBus">
 </figure>
 
@@ -44,7 +44,7 @@ CAN-H will be at 5 v and CAN-L at 0 v and while transmitting a dominant (0) and 
 The dominant differential voltage is a nominal 2 V. The termination resistor passively returns the two wires to a nominal differential voltage of 0V.
 
 <figure>
-  <img src="assets\img\blogs\2021_02_03\CAN-bus-frame-with-stuff-bit-and-correct-CRC.png" 
+  <img src="assets/img/blogs/2021_02_03/CAN_bus_frame_in_bits.png" 
   alt="CAN packet in bits">
   <figcaption>Standard CAN Packet</figcaption>
 </figure>
@@ -85,7 +85,7 @@ The data is autonomous in the CAN network and if a receiver node wants to reques
 There are two types of CAN packets: standard and extended.
 
 <figure>
-  <img src="assets\img\blogs\2021_02_03\standard-CAN-messgae.webp"
+  <img src="assets/img/blogs/2021_02_03/standard-CAN-messgae.webp"
   alt="Standatd and Extended CAN Message">
 </figure>
 
@@ -123,7 +123,7 @@ For a highly populated network, the performance depends upon the data transmissi
 we should remember that it is not like any Master-slave communication, literally any node and all nodes will send and receives the data according to its function which of course the priority of transmission depends on the situation. the goal of the network arbitration here is to push and pull data reliably by every node.
 
 <figure>
-  <img src="assets\img\blogs\2021_02_03\ethernet_CSMA.webp"
+  <img src="assets/img/blogs/2021_02_03/ethernet_CSMA.webp"
   alt="Ethernet CSMA">
 </figure>
 
@@ -138,7 +138,7 @@ CAN bus also has two different types of network’s High speed CAN bus which sup
 CAN bus network is also a completely centralised network, this makes it flexible to add new nodes and run diagnostics from one point of the network. The fully centralized network with efficiency and robustness in transmitting essential data makes it practical to be used in vehicles and industrial machinery widely across different industries like Heavy duty fleet telematics, Airplanes, manufacturing plants and medical equipment.
 
 <figure>
-  <img src="assets\img\blogs\2021_02_03\collision-avoidance-in-CAN.webp"
+  <img src="assets/img/blogs/2021_02_03/collision-avoidance-in-CAN.webp"
   alt="collison avoidance in CAN">
 </figure>
 
