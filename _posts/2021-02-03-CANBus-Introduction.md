@@ -18,7 +18,7 @@ The automobile industry uses many protocols in modernized vehicles with embedded
 </figure>
 
 <figure>
-  <img src="assets/img/blogs/2021_02_03/after_can_bus.jpg" 
+  <img src="/assets/img/blogs/2021_02_03/after_can_bus.jpg" 
   alt="with CANBus">
 </figure>
 
