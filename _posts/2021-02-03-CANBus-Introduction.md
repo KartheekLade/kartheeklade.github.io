@@ -13,12 +13,12 @@ Cars are prior means of transportation, in older cars they had basic electrical 
 The automobile industry uses many protocols in modernized vehicles with embedded systems and Electronic control units (ECU) which can communicate with each other using protocols like CAN.
 
 <figure>
-  <img src="/assets/img/blogs/2021_02_03/before_can_bus.webp" 
+  <img src="./assets/img/blogs/2021_02_03/before_can_bus.webp" 
   alt="without CANBus">
 </figure>
 
 <figure>
-  <img src="/assets/img/blogs/2021_02_03/after_can_bus.jpg" 
+  <img src="./assets/img/blogs/2021_02_03/after_can_bus.jpg" 
   alt="with CANBus">
 </figure>
 
