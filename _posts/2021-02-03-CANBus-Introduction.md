@@ -44,7 +44,7 @@ CAN-H will be at 5 v and CAN-L at 0 v and while transmitting a dominant (0) and 
 The dominant differential voltage is a nominal 2 V. The termination resistor passively returns the two wires to a nominal differential voltage of 0V.
 
 <figure>
-  <img src="assets/img/blogs/2021_02_03/CAN_bus_frame_in_bits.png" 
+  <img src="/assets/img/blogs/2021_02_03/CAN_bus_frame_in_bits.png" 
   alt="CAN packet in bits">
   <figcaption>Standard CAN Packet</figcaption>
 </figure>
