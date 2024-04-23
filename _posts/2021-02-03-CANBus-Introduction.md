@@ -13,12 +13,12 @@ Cars are prior means of transportation, in older cars they had basic electrical 
 The automobile industry uses many protocols in modernized vehicles with embedded systems and Electronic control units (ECU) which can communicate with each other using protocols like CAN.
 
 <figure>
-  <img src="/assets/img/blogs/2021_02_03/before can bus.webp" 
+  <img src="/assets/img/blogs/2021_02_03/before_can_bus.webp" 
   alt="without CANBus">
 </figure>
 
 <figure>
-  <img src="/assets/img/blogs/2021_02_03/after can bus.webp" 
+  <img src="assets\img\blogs\2021_02_03\after_can_bus.webp" 
   alt="with CANBus">
 </figure>
 
@@ -31,7 +31,7 @@ CAN protocol runs over two wires CAN-H and CAN-L, it works on the method of diff
 CAN protocol runs over two wires CAN-H and CAN-L, it works on the method of differential signaling “Differential signaling is a method for electrically transmitting information using two complementary signals. The technique sends the same electrical signal as a differential pair of signals, each in its own conductor. The pair of conductors can be wires or traces on a circuit board.” it transmits the data by differing the voltage between two wires. This provides a viable data transmission as it can resist noises and disturbances.
 
 <figure>
-  <img src="/assets/img/blogs/2021_02_03/driver logic in can bus.webp" 
+  <img src="/assets/img/blogs/2021_02_03/driver-logic-in-can-bus.webp" 
   alt="CAN logic to general logic">
   <figcaption>CAN logic to general logic</figcaption>
 </figure>
@@ -85,7 +85,7 @@ The data is autonomous in the CAN network and if a receiver node wants to reques
 There are two types of CAN packets: standard and extended.
 
 <figure>
-  <img src="assets\img\blogs\2021_02_03\standard CAN messgae.webp"
+  <img src="assets\img\blogs\2021_02_03\standard-CAN-messgae.webp"
   alt="Standatd and Extended CAN Message">
 </figure>
 
@@ -123,7 +123,7 @@ For a highly populated network, the performance depends upon the data transmissi
 we should remember that it is not like any Master-slave communication, literally any node and all nodes will send and receives the data according to its function which of course the priority of transmission depends on the situation. the goal of the network arbitration here is to push and pull data reliably by every node.
 
 <figure>
-  <img src="assets\img\blogs\2021_02_03\ethernet CSMA.webp"
+  <img src="assets\img\blogs\2021_02_03\ethernet_CSMA.webp"
   alt="Ethernet CSMA">
 </figure>
 
@@ -138,7 +138,7 @@ CAN bus also has two different types of network’s High speed CAN bus which sup
 CAN bus network is also a completely centralised network, this makes it flexible to add new nodes and run diagnostics from one point of the network. The fully centralized network with efficiency and robustness in transmitting essential data makes it practical to be used in vehicles and industrial machinery widely across different industries like Heavy duty fleet telematics, Airplanes, manufacturing plants and medical equipment.
 
 <figure>
-  <img src="assets\img\blogs\2021_02_03\collision avoidance in CAN.webp"
+  <img src="assets\img\blogs\2021_02_03\collision-avoidance-in-CAN.webp"
   alt="collison avoidance in CAN">
 </figure>
 
