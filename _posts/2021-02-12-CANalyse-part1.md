@@ -10,7 +10,7 @@ last_modified_at: 2021-02-12
 #### CANalyse
 
 <figure>
-  <img src="assets/img/blogs/2021-02-12/CANalyse_cover.webp" alt="CANalyse — A vehicle network analysis tool!">
+  <img src="\assets/img/blogs/2021-02-12/CANalyse_cover.webp" alt="CANalyse — A vehicle network analysis tool!">
   <figcaption>CANalyse — A vehicle network analysis tool!</figcaption>
 </figure>
 
