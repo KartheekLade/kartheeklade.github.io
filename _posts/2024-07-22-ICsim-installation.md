@@ -34,53 +34,54 @@ Along with the above dependenceis we will be using `Meson` an open-source build 
 ### Steps to Install ICSim:
 
 1. Install the dependencies
-```
-  sudo apt-get install libsdl2-dev libsdl2-image-dev can-utils
-```
-<figure>
-  <img src="/assets/img/blogs/2024-07-22/depedecies" alt="Install the dependencies">
-  <figcaption>Install the dependencies</figcaption>
-</figure>
+  ```
+    sudo apt-get install libsdl2-dev libsdl2-image-dev can-utils
+  ```
+  <figure>
+    <img src="\assets\img\blogs\2024-07-22\depedecies" alt="Install the dependencies">
+    <figcaption>Install the dependencies</figcaption>
+  </figure>
 
 2. Install 'Meson'
-```
-  sudo apt install meson
-```
-<figure>
-  <img src="/assets/img/blogs/2024-07-22/meson" alt="Install Meson">
-  <figcaption>meson isntallation</figcaption>
-</figure>
+  ```
+    sudo apt install meson
+  ```
+  <figure>
+    <img src="\assets/img/blogs/2024-07-22/meson" alt="Install Meson">
+    <figcaption>meson isntallation</figcaption>
+  </figure>
 
-3. Clone the repository
-```
-  git clone https://github.com/zombieCraig/ICSim
-```
-<figure>
-  <img src="/assets/img/blogs/2024-07-22/repo" 
-    alt="Clone the repositore">
-  <figcaption>clone the repository from github</figcaption>
-</figure>
+3 Clone the repository
+  ```
+    git clone https://github.com/zombieCraig/ICSim
+  ```
+  <figure>
+    <img src="\assets/img/blogs/2024-07-22/repo" 
+      alt="Clone the repositore">
+    <figcaption>clone the repository from github</figcaption>
+  </figure>
 
 4. Build the project
-```
-  cd ICSim 
-  meson setup builddir && cd builddir
-  meson compile
-  mv controls icsim ..
-```
-to start ICsim, hop over to the main folder
+  ```
+    cd ICSim 
+    meson setup builddir && cd builddir
+    meson compile
+    mv controls icsim ..
+  ```
 
-```cd ..
-  ./setup_vcan.sh
-  ./icsim vcan0
-  ./controls vcan0
-```
+5. to start ICsim, hop over to the main folder
 
-<figure>
-  <img src="/assets/img/blogs/2024-07-22/setup" 
-    alt="build the tool">
-  <figcaption>Build the project</figcaption>
-</figure>
+  ```
+    cd ..
+    ./setup_vcan.sh
+    ./icsim vcan0
+    ./controls vcan0
+  ```
+  <figure>
+    <img src="\assets/img/blogs/2024-07-22/setup" 
+      alt="build the tool">
+    <figcaption>Build the project</figcaption>
+  </figure>
 
 ### Conclusion:
 ICsim is a powerful tool for simulating and testing CAN bus interactions, making it invaluable for automotive software development, testing, and cybersecurity research. By providing a virtual environment, it eliminates the need for physical hardware during the initial stages of development and testing.
