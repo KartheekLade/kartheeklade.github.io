@@ -10,9 +10,9 @@ last_modified_at: 2024-07-22
 ```
   Note : All the required information to install ICSim is availiable on official github repository by Craigsmith and contributors of ICSim, Incase if you're looking for a step by step guidance please follow below. 
 ```
-### ICSI
+### ICSim
 
-ICsim (Instrument Cluster Simulator) is a tool used for simulating a CAN bus environment, particularly the interaction between different Electronic Control Units (ECUs) in a vehicle. It provides a graphical interface to simulate an instrument cluster, allowing users to visualize and interact with CAN messages in real-time.
+[ICsim](https://github.com/zombieCraig/ICSim) (Instrument Cluster Simulator) is a tool used for simulating a CAN bus environment, particularly the interaction between different Electronic Control Units (ECUs) in a vehicle. It provides a graphical interface to simulate an instrument cluster, allowing users to visualize and interact with CAN messages in real-time.
 
 ### Key Features of ICsim:
 1. **Simulation Environment**: ICsim connects to a virtual CAN bus environment where users can simulate various vehicle functions by sending and receiving CAN messages.
