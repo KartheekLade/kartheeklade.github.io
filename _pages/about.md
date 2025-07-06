@@ -3,18 +3,17 @@ layout: page
 permalink: /about/
 title: About
 ---
-**Purpose of this blog:** Blogs written here are intended to share some particulrs, which i came across or i felt the need of existing, sometimes new topics or the approach to understand something, Ocasionally non-technical blogs too.
+**Purpose of this blog:** Blogs written here are intended to share some particulars that I came across or felt the need for, sometimes new topics or approaches to understanding something. Occasionally, non-technical blogs will be included too.
 
-**About me:** I'm currently working as a senior consultant for a global OEM, I'm into Automotive and IoT Eco-systems Security researche with a passion for enhancing the security landscape of the Internet of Vehicles (IoV). I do actively contribute to the opensource communities as part organizing team for Seasides conference  & ASRG (Vulnerability management and SOS conference)  communities, focusing on fortifying vehicle security and mentoring individuals interested in Cyber Security. in simple terms i like focusing on breaking and securing things.
+**About me:** I'm currently working as a senior consultant for a global OEM. I'm involved in Automotive and IoT Ecosystems Security research with a passion for enhancing the security landscape of the Internet of Vehicles (IoV). I actively contribute to open-source communities as part of the organizing team for the Seasides conference and ASRG (Vulnerability Management and SOS conference) communities, focusing on fortifying vehicle security and mentoring individuals interested in Cyber Security. In simple terms, I enjoy focusing on breaking and securing things.
 
+**Education:** In contrast, I studied Mechanical Engineering and possess a bachelor's degree in the same.
 
-**Education:** Out of contrast, I studied Mechanical ENgineering and i posses a bachelors degeree in the same.
+**Open Source:** I try to contribute to communities whenever I can. I'm a proud volunteer at:
 
-**Open Source** I try to contribute to communities whenever i can, I'm a proud volunteer at
-
-- **Seasides**: [Orgnaising Committe](https://www.seasides.net).
-- **ASRG VM**: [Technical Committe - Vulnerability Management](https://www.asrg.io).
-- **Secure Our Streets**: [Orgnaising Committe and CFP Review Board](https://www.sos.asrg.io).
+- **Seasides**: [Organizing Committee](https://www.seasides.net).
+- **ASRG VM**: [Technical Committee - Vulnerability Management](https://www.asrg.io).
+- **Secure Our Streets**: [Organizing Committee and CFP Review Board](https://www.sos.asrg.io).
 
 **Projects:**
 * [CANalyse 2.0 ](https://github.com/canalyse/CANalyse-2.0)
