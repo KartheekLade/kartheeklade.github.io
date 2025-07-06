@@ -81,7 +81,7 @@ via any atacks or leaked.
 Symmetric-Key Cryptography: Fast and efficient; uses the same key for encryption and decryption (e.g., AES).
 
 
-```mermaid
+<pre> <div class="mermaid">
 
 flowchart LR
     P1["`📄 **Plaintext**<br>'I love pizza'`"] -->|🔒 Encrypt| C["`🔐 **Ciphertext**<br>'Xb92@kLm!1'`"]
@@ -95,7 +95,9 @@ flowchart LR
     
     linkStyle 0,1 stroke:#333,stroke-width:2px
     linkStyle 2,3 stroke:#666,stroke-dasharray:3
-```
+
+</div> </pre>
+
 
     
 
@@ -103,7 +105,7 @@ flowchart LR
 Asymmetric-Key Cryptography Uses a public-private key pair; ideal for secure key exchange (e.g., RSA).
 
 
-```mermaid
+<pre> <div class="mermaid">
 
 flowchart LR
     S["👤 Sender"] -->|🔓 Encrypts with<br>Receiver's Public Key| ENC["📦 Encrypted Message"]
@@ -115,7 +117,9 @@ flowchart LR
 
     linkStyle 0,1,2 stroke:#444,stroke-width:2px
     linkStyle 3,4 stroke:#999,stroke-dasharray:4
-```
+
+</div> </pre>
+
 
 
 
@@ -157,13 +161,15 @@ Cryptography isn’t just for spies and hackers it’s quietly working behind th
 
 WhatsApp uses end-to-end encryption to ensure that only the sender and receiver can read messages not even WhatsApp can see them
 
-```mermaid
+<pre> <div class="mermaid">
 flowchart LR
     
         YOU["👤 You<br><code>'I love 🍕'</code>"] --> WAPP["🟢 WhatsApp<br><code>'kD93*#Xz!&@9'</code>"] --> FRIEND["👤 Your Friend<br><code>'I love 🍕'</code>"]
 
     WAPP --> NOTE["💬 WhatsApp:<br><i>We <b>totally</b> can't read this 👀...<br>But hey, meta-data is tasty 😇</i>"]
-```
+
+</div> </pre>
+
 
 
 
@@ -212,18 +218,34 @@ When it comes to securing information, cryptography and steganography are two di
 
 While cryptography secures the content of a message, steganography conceals its presence. Combining these techniques can create layers of security, making it harder for attackers to detect or access sensitive information.
 
-				+---------------------------+          +----------------------------+
-				|       Cryptography        |          |       Steganography        |
-				+---------------------------+          +----------------------------+
-				| 🔸 Message is encrypted    |          | 🔸 Message is hidden         |
-				| 🔸 Output looks like       |          | 🔸 Output looks like         |
-				|    random text            |          |    an ordinary file         |
-				| 🔸 Needs a key to decode   |          | 🔸 Doesn't look suspicious   |
-				+---------------------------+          +----------------------------+
-				           |                                         |
-				           v                                         v
-				Encrypted gibberish                        Innocent-looking image,  
-				(e.g., kD93*df@!)                           audio, or file
+<Pre>
+<div class="mermaid">
+flowchart LR
+    subgraph CRYPTO["🔐 Cryptography"]
+        C1["📌 Purpose: Hide the **content**"]
+        C2["🔢 Output: Random looking ciphertext"]
+        C3["🧠 Detection: Easy to notice"]
+        C4["🔑 Needs a Key: ✅ Yes"]
+        C5["💡 Bonus: Used in HTTPS, messaging apps"]
+    end
+
+    subgraph STEGO["🖼️ Steganography"]
+        S1["📌 Purpose: Hide the **existence**"]
+        S2["🎨 Output: Normal looking media"]
+        S3["🕵️ Detection: Hard to detect"]
+        S4["🔑 Needs a Key: ❌ Not always"]
+        S5["💡 Bonus: Used for watermarking, covert messaging"]
+    end
+
+	CRYPTO ---- STEGO
+
+
+    %% Vertical alignment
+    C1 --> C2 --> C3 --> C4 --> C5
+    S1 --> S2 --> S3 --> S4 --> S5
+</div></pre>
+
+
 
 
 
