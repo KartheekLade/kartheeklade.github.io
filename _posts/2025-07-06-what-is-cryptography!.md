@@ -80,69 +80,42 @@ via any atacks or leaked.
 
 Symmetric-Key Cryptography: Fast and efficient; uses the same key for encryption and decryption (e.g., AES).
 
-		[Plaintext]
-		   "I love pizza"
-		        |
-		        |  +--------------------+
-		        |  |  Encryption Key    |
-		        v  +--------------------+
-		+----------------------------------------+
-		| Encryption Algorithm (e.g., AES)       |
-		+----------------------------------------+
-		        |
-		        v
-		[Ciphertext]
-		   "Xb92@kLm!1"   <-- Unreadable without key
-		        |
-		        |  +--------------------+
-		        |  |  Decryption Key    |
-		        v  +--------------------+
-		+----------------------------------------+
-		| Decryption Algorithm (e.g., AES)       |
-		+----------------------------------------+
-		        |
-		        v
-		[Plaintext Restored]
-		   "I love pizza"
-		   
+
 ```mermaid
-flowchart TD
-    A[Plaintext\n"I love pizza"] --> B[Encryption Key]
-    B --> C[Encryption Algorithm\n(e.g., AES)]
-    C --> D[Ciphertext\n"Xb92@kLm!1"]
-    D --> E[Decryption Key]
-    E --> F[Decryption Algorithm\n(e.g., AES)]
-    F --> G[Plaintext Restored\n"I love pizza"]
+
+flowchart LR
+    P1["`📄 **Plaintext**<br>'I love pizza'`"] -->|🔒 Encrypt| C["`🔐 **Ciphertext**<br>'Xb92@kLm!1'`"]
+    C -->|🔓 Decrypt| P2["`📄 **Plaintext**<br>'I love pizza'`"]
+    
+    P1 --> E["⚙️Encryption<br>Key + AES"]
+    E -.->|🔑 Secure Channel| D["`⚙️**Decryption**<br>AES-256 + Key`"] 
+    D -.-> C
+    
+    P2 --> S[✅ Success!]
+    
+    linkStyle 0,1 stroke:#333,stroke-width:2px
+    linkStyle 2,3 stroke:#666,stroke-dasharray:3
 ```
 
+    
 
 
 Asymmetric-Key Cryptography Uses a public-private key pair; ideal for secure key exchange (e.g., RSA).
 
-           +-------------------------+
-           |  Receiver's Public Key  |
-           +-------------------------+
-                      |
-                      v
-            [Encryption Process]
-                      |
-                      v
-              +----------------+
-              |  Ciphertext    | <-- Sent over internet
-              +----------------+
-                      |
-                      v
-          +---------------------------+
-          |  Receiver's Private Key   |
-          +---------------------------+
-                      |
-                      v
-            [Decryption Process]
-                      |
-                      v
-             +------------------+
-             | Original Message |
-             +------------------+
+
+```mermaid
+
+flowchart LR
+    S["👤 Sender"] -->|🔓 Encrypts with<br>Receiver's Public Key| ENC["📦 Encrypted Message"]
+    ENC -->|📡 Sent over network| RCV["👤 Receiver"]
+    RCV -->|🔑 Decrypts with <br> it's own Private Key| P["📄 Plaintext"]
+
+    S --> PK["🔑 Public Key of Receiver"]
+    RCV --> SK["🗝️ Private Key of Receiver"]
+
+    linkStyle 0,1,2 stroke:#444,stroke-width:2px
+    linkStyle 3,4 stroke:#999,stroke-dasharray:4
+```
 
 
 
@@ -153,23 +126,30 @@ In simple lingo;
 
 Hash Functions: One-way functions that produce a fixed-size output (e.g., SHA-256). Useful for password storage and data integrity (and Secure Boot too...)
 
-				+--------------------+
-				|   Input / Message  |
-				|  e.g., "hello123"  |
-				+--------------------+
-				           |
-				           v
-				+--------------------------+
-				|   Hash Function (e.g.,   |
-				|       SHA-256)           |
-				+--------------------------+
-				           |
-				           v
-		+------------------------------------------------+
-		|   Output (Fixed-length Hash / Digest)          |
-		|   e.g., 2cf24dba5fb0a... (64 hex characters)   |
-		+------------------------------------------------+
+```mermaid
+flowchart TD
 
+    %% Sender Side (Top Row)
+    MSG["📤 Original Message<br><code>'hello123'</code>"] --> H1["🧮 SHA-256 Hash"]
+    H1 --> DIGEST["🔐 Digest<br><code>2cf24dba5fb0a...</code>"]
+    DIGEST -.->|📬 Sent with message| RCV["📥 Receiver"]
+
+    %% Receiver Side (Bottom Row)
+    RCV --> MRCV["📄 Received Message<br><code>'hello123'</code>"]
+    MRCV --> H2["🧮 Recalculate SHA-256"]
+    H2 --> COMP["🔁 Compare Hashes"]
+    COMP -->|✅ Match| VALID["✅ Message Untouched"]
+    COMP -->|❌ Mismatch| INVALID["⚠️ Message Tampered"]
+
+    %% Positioning using invisible links to enforce 2 levels
+    MSG -.-> MRCV
+
+    %% Optional Styling
+    linkStyle 0,1,2 stroke:#222,stroke-width:2px
+    linkStyle 3,4,5,6 stroke:#666,stroke-dasharray:3
+
+
+```
 
 
 
@@ -179,14 +159,13 @@ Cryptography isn’t just for spies and hackers it’s quietly working behind th
 
 WhatsApp uses end-to-end encryption to ensure that only the sender and receiver can read messages not even WhatsApp can see them
 
-			[You]                          [WhatsApp]                          [Your Friend]
-			 👤                             🟢📲👀🕵️                              👤
-			"I love 🍕"      ----->    "kD93*#Xz!&@9"      ----->    Decrypted: "I love 🍕"
-          	                         WhatsApp:
-		                "We *totally* can't read this 👀...  
-	                   but you know... meta-data's tasty. 😇"
+```mermaid
+flowchart LR
+    
+        YOU["👤 You<br><code>'I love 🍕'</code>"] --> WAPP["🟢 WhatsApp<br><code>'kD93*#Xz!&@9'</code>"] --> FRIEND["👤 Your Friend<br><code>'I love 🍕'</code>"]
 
-
+    WAPP --> NOTE["💬 WhatsApp:<br><i>We <b>totally</b> can't read this 👀...<br>But hey, meta-data is tasty 😇</i>"]
+```
 
 
 
