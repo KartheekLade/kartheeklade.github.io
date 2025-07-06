@@ -104,8 +104,16 @@ Symmetric-Key Cryptography: Fast and efficient; uses the same key for encryption
 		        v
 		[Plaintext Restored]
 		   "I love pizza"
-
-
+		   
+```mermaid
+flowchart TD
+    A[Plaintext\n"I love pizza"] --> B[Encryption Key]
+    B --> C[Encryption Algorithm\n(e.g., AES)]
+    C --> D[Ciphertext\n"Xb92@kLm!1"]
+    D --> E[Decryption Key]
+    E --> F[Decryption Algorithm\n(e.g., AES)]
+    F --> G[Plaintext Restored\n"I love pizza"]
+```
 
 
 
