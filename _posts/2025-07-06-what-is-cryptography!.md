@@ -126,7 +126,7 @@ In simple lingo;
 
 Hash Functions: One-way functions that produce a fixed-size output (e.g., SHA-256). Useful for password storage and data integrity (and Secure Boot too...)
 
-```mermaid
+<pre> <div class="mermaid">
 flowchart TD
 
     %% Sender Side (Top Row)
@@ -148,9 +148,7 @@ flowchart TD
     linkStyle 0,1,2 stroke:#222,stroke-width:2px
     linkStyle 3,4,5,6 stroke:#666,stroke-dasharray:3
 
-
-```
-
+</div> </pre>
 
 
 ### 🚀 Modern Cryptography in Action
