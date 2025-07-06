@@ -171,12 +171,12 @@ Cryptography isn’t just for spies and hackers it’s quietly working behind th
 
 WhatsApp uses end-to-end encryption to ensure that only the sender and receiver can read messages not even WhatsApp can see them
 
-				[You]                          [WhatsApp]                          [Your Friend]
-				 👤                             🟢📲👀🕵️                              👤
-				"I love 🍕"      ----->    "kD93*#Xz!&@9"      ----->    Decrypted: "I love 🍕"
-           		                               WhatsApp:
-			                      "We *totally* can't read this 👀...  
-			                       but you know... meta-data's tasty. 😇"
+			[You]                          [WhatsApp]                          [Your Friend]
+			 👤                             🟢📲👀🕵️                              👤
+			"I love 🍕"      ----->    "kD93*#Xz!&@9"      ----->    Decrypted: "I love 🍕"
+          	                         WhatsApp:
+		                "We *totally* can't read this 👀...  
+	                   but you know... meta-data's tasty. 😇"
 
 
 
@@ -227,18 +227,19 @@ When it comes to securing information, cryptography and steganography are two di
 
 While cryptography secures the content of a message, steganography conceals its presence. Combining these techniques can create layers of security, making it harder for attackers to detect or access sensitive information.
 
-				+---------------------------+          +-------------------------------+
-				|       Cryptography        |          |        Steganography          |
-				+---------------------------+          +-------------------------------+
-				| 🔸 Message is encrypted   |          | 🔸 Message is hidden          |
-				| 🔸 Output looks like      |          | 🔸 Output looks like          |
-				|    random text            |          |    an ordinary file           |
-				| 🔸 Needs a key to decode  |          | 🔸 Doesn't look suspicious    |
-				+---------------------------+          +-------------------------------+
+				+---------------------------+          +----------------------------+
+				|       Cryptography        |          |       Steganography        |
+				+---------------------------+          +----------------------------+
+				| 🔸 Message is encrypted    |          | 🔸 Message is hidden         |
+				| 🔸 Output looks like       |          | 🔸 Output looks like         |
+				|    random text            |          |    an ordinary file         |
+				| 🔸 Needs a key to decode   |          | 🔸 Doesn't look suspicious   |
+				+---------------------------+          +----------------------------+
 				           |                                         |
 				           v                                         v
-				Encrypted gibberish                        Innocent-looking image,
+				Encrypted gibberish                        Innocent-looking image,  
 				(e.g., kD93*df@!)                           audio, or file
+
 
 
 
