@@ -29,37 +29,21 @@ Cryptography has always been about one thing: protecting secrets. But how we’v
 
 #### The Evolution of Cryptography: Key Milestones
 
-**Caesar Cipher (c. 50 BCE)**  
-One of the earliest known encryption methods, famously used by Julius Caesar.  
- **How it works:** Shift each letter in the message by a fixed number of places in the alphabet.  
+Caesar Cipher (c. 50 BCE) One of the earliest known encryption methods, famously used by Julius Caesar.How it works: Shift each letter in the message by a fixed number of places in the alphabet.  
 
-Example:  
-Plaintext: "HELLO"  
-Shift: +3  
-Ciphertext: "KHOOR"  
+Example: Plaintext: "HELLO" Shift: +3  
+Ciphertext: "KHOOR" While simple by today’s standards, it was effective enough to confuse enemies in ancient times.
 
-While simple by today’s standards, it was effective enough to confuse enemies in ancient times.
+Enigma Machine (WWII, 1930s–1940s) An electromechanical device used by Nazi Germany to encrypt military communications.How it works: Letters were scrambled using a series of rotating rotors and plugboards, with daily key settings changing the encryption pattern.  
 
-
-** Enigma Machine (WWII, 1930s–1940s)**  
-An electromechanical device used by Nazi Germany to encrypt military communications.  
- **How it works:** Letters were scrambled using a series of rotating rotors and plugboards, with daily key settings changing the encryption pattern.  
-
-Example:  
-Plaintext: "A"  
+Example: Plaintext: "A"  
 Ciphertext: "T" (today) → "G" (tomorrow, with a new key setting)  
 
-The Enigma Machine was eventually cracked by Allied cryptographers, including Alan Turing, marking a pivotal moment in both the war and cryptographic history.
-
-
-
-** From War Rooms to Web Browsers**  
-Cryptography transitioned from a military tool to a cornerstone of modern digital security. Key milestones include:  
-
-- **1976:** Diffie–Hellman key exchange introduced — the first method to securely share keys in public.  
-- **1977:** RSA algorithm invented by Rivest, Shamir, and Adleman — a breakthrough in public key cryptography.  
-- **1991:** Phil Zimmermann released PGP (Pretty Good Privacy), empowering ordinary users with strong encryption for emails and files.  
-- **2000s–Now:** AES (Advanced Encryption Standard) became the global standard for symmetric encryption, securing everything from WiFi networks to mobile apps.
+The Enigma Machine was eventually cracked by Allied cryptographers, including Alan Turing, marking a pivotal moment in both the war and cryptographic history. From War Rooms to Web Browsers,Cryptography transitioned from a military tool to a cornerstone of modern digital security. Key milestones include:  
+- 1976: Diffie Hellman key exchange introduced the first method to securely share keys in public.  
+- 1977: RSA algorithm invented by Rivest, Shamir, and Adleman a breakthrough in public key cryptography.  
+- 1991: Phil Zimmermann released PGP (Pretty Good Privacy), empowering ordinary users with strong encryption for emails and files.  
+- 2000s–Now: AES (Advanced Encryption Standard) became the global standard for symmetric encryption, securing everything from WiFi networks to mobile apps.
 
 
 > From ancient ciphers to cutting edge algorithms, cryptography has evolved to meet the ever growing demands of privacy and security in a connected world.
@@ -197,16 +181,13 @@ Devices like smart cameras, thermostats, and pacemakers rely on lightweight encr
 
 ####  Attacks on Cryptographic Systems
 
-Cryptography is powerful, but it's not bulletproof. Many real world attacks don’t break the math—they exploit how cryptography is **used** or **implemented**. Even the strongest systems can be undermined by poor implementation or weak keys:
+Cryptography is powerful, but it's not bulletproof. Many real world attacks don’t break the math—they exploit how cryptography is used or implemented Even the strongest systems can be undermined by poor implementation or weak keys:
 
- **Brute Force Attacks**  
-Brute force attacks involve systematically guessing every possible combination of keys until the correct one is found. This method exploits weak or short keys, as they reduce the number of combinations an attacker needs to try. For example, a 4 digit PIN like "1234" has only 10,000 possible combinations, making it relatively easy to crack compared to a 256 bit encryption key, which has an astronomically larger number of possibilities. Weak passwords such as "password" or "123456" are prime targets for brute force attacks, as they are commonly used and easy to guess.
+*Brute force* attacks involve systematically guessing every possible combination of keys until the correct one is found. This method exploits weak or short keys, as they reduce the number of combinations an attacker needs to try. For example, a 4 digit PIN like "1234" has only 10,000 possible combinations, making it relatively easy to crack compared to a 256 bit encryption key, which has an astronomically larger number of possibilities. Weak passwords such as "password" or "123456" are prime targets for brute force attacks, as they are commonly used and easy to guess.
 
- **Man in the Middle (MITM) Attacks**  
-MITM attacks occur when an attacker secretly intercepts and manipulates communication between two parties without their knowledge. Imagine using public WiFi at a coffee shop to log into your email. An attacker on the same network could intercept your login credentials if the connection is not encrypted. This is why secure protocols like HTTPS and end to end encryption are critical—they prevent attackers from eavesdropping or tampering with sensitive data during transmission.
+*Man in the Middle (MITM) Attacks* MITM attacks occur when an attacker secretly intercepts and manipulates communication between two parties without their knowledge. Imagine using public WiFi at a coffee shop to log into your email. An attacker on the same network could intercept your login credentials if the connection is not encrypted. This is why secure protocols like HTTPS and end to end encryption are critical—they prevent attackers from eavesdropping or tampering with sensitive data during transmission.
 
- **Side Channel Attacks**  
-Side channel attacks exploit indirect information leaked by a system during its operation rather than directly attacking the cryptographic algorithm. These leaks can include physical clues such as power consumption, electromagnetic emissions, timing variations, or even sounds produced by the device. A famous example is the TEMPEST program, a U.S. government initiative that analyzed electromagnetic emissions from electronic devices to reconstruct sensitive information like screen content or keystrokes. Mitigating side channel attacks often involves designing hardware and software to minimize such leaks and implementing countermeasures like randomization or shielding.
+*Side channel attacks* exploit indirect information leaked by a system during its operation rather than directly attacking the cryptographic algorithm. These leaks can include physical clues such as power consumption, electromagnetic emissions, timing variations, or even sounds produced by the device. A famous example is the TEMPEST program, a U.S. government initiative that analyzed electromagnetic emissions from electronic devices to reconstruct sensitive information like screen content or keystrokes. Mitigating side channel attacks often involves designing hardware and software to minimize such leaks and implementing countermeasures like randomization or shielding.
 
 Cryptography is only as strong as its implementation. Understanding these attack vectors is essential for designing secure systems that can withstand real world threats.
 
@@ -271,8 +252,8 @@ Let’s get real.
 
 #### TL;DR
 
-*  **Cryptography ≠ just hiding secrets** it’s about creating **trust** in an untrusted world.
-*  It's the backbone of modern digital life: from your WhatsApp messages to billion dollar blockchain transactions.
+*  Cryptography ≠ just hiding secrets it’s about creating *trust* in an untrusted world.
+*  It's the backbone of modern digital life from your WhatsApp messages to billion dollar blockchain transactions.
 *  *"In crypto we trust, the rest is just plaintext"*
 
 
