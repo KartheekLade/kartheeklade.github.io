@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Digital Signatures: Cryptography’s Proof of Trust
+title: Digital Signatures Cryptography’s Proof of Trust
 date: 2025-07-07 23:57:34
 categories: [cryptography]
 tags: [security, encryption, cryptography]
