@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Digital Signatures Cryptography’s Proof of Trust"
-date: 2025-07-07 23:57:34
+title: Digital Signatures Cryptography’s Proof of Trust
+date: 2025-07-08 00:00:00
 categories: [cryptography]
 tags: [security, encryption, cryptography]
-last_modified_at: 2025-07-07
+last_modified_at: 2025-07-08
 ---
 
 #### What Are Digital Signatures?
