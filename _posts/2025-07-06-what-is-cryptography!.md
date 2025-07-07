@@ -62,7 +62,7 @@ Plaintext vs Ciphertext: Plaintext is readable data; ciphertext is the encrypted
 Keys: Keys are used to encrypt and decrypt messages. Symmetric cryptography uses the same key for both, while asymmetric cryptography uses a pair of keys in  Symmetric Single key is used for both encryption and decryption (e.g., AES) fast but risky if key is stolen 
 via any atacks or leaked.
 
-Symmetric-Key Cryptography: Fast and efficient; uses the same key for encryption and decryption (e.g., AES).
+Symmetric Key Cryptography: Fast and efficient; uses the same key for encryption and decryption (e.g., AES).
 
 
 <pre> <div class="mermaid">
@@ -257,3 +257,5 @@ Let’s get real.
 *  *"In crypto we trust, the rest is just plaintext"*
 
 
+
+I hope this blog post gave you a good overview of basics of cryptography. If you are reading up to this point, you might be interested in cyber security. Going forward, i will try to add more intresting blogs like this one so, keep an eye on this blog page. I hope you enjoyed reading this as much as I enjoyed writing it :) made with <3 Kartheek Lade

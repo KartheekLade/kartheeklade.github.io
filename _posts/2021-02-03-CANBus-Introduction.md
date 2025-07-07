@@ -8,7 +8,7 @@ last_modified_at: 2021-02-03
 ---
 
 #### why do we need CANBus
-Cars are prior means of transportation, in older cars they had basic electrical wiring as time went on the demand for more features was increased to gain competitive advantage and also comply with new regulations, As we are literally and figuratively turning the corner into the era of the driver-less or autonomous car, hacking automobiles will become even more important and dangerous.
+Cars are prior means of transportation, in older cars they had basic electrical wiring as time went on the demand for more features was increased to gain competitive advantage and also comply with new regulations, As we are literally and figuratively turning the corner into the era of the driver less or autonomous car, hacking automobiles will become even more important and dangerous.
 
 The automobile industry uses many protocols in modernized vehicles with embedded systems and Electronic control units (ECU) which can communicate with each other using protocols like CAN.
 
@@ -36,7 +36,7 @@ CAN protocol runs over two wires CAN-H and CAN-L, it works on the method of diff
   <figcaption>CAN logic to general logic</figcaption>
 </figure>
 
-CAN is a multi-master serial bus connected with ECU’s{nodes}. all of them are connected to each other through a two-wire bus which consists of a
+CAN is a multi master serial bus connected with ECU’s{nodes}. all of them are connected to each other through a two wire bus which consists of a
 120-ohm resistor at the end of them to terminate the data.
 
 CAN-H will be at 5 v and CAN-L at 0 v and while transmitting a dominant (0) and does not drive either wire when transmitting a recessive (1). Designating “0” as dominant gives the nodes with the lower ID numbers priority on the bus.
@@ -49,7 +49,7 @@ The dominant differential voltage is a nominal 2 V. The termination resistor pas
   <figcaption>Standard CAN Packet</figcaption>
 </figure>
 
-The frame format is as follows: The bit values are described for CAN-LO signal.
+The frame format is as follows: The bit values are described for CAN-LOW signal.
 
 | Field name                        | Length (bits) | Purpose                                                                 |
 |-----------------------------------|---------------|-------------------------------------------------------------------------|
@@ -65,8 +65,8 @@ The frame format is as follows: The bit values are described for CAN-LO signal.
 | CRC delimiter                     | 1             | Must be recessive (1)                                                    |
 | ACK slot                          | 1             | Transmitter sends recessive (1) and any receiver can assert a dominant (0) |
 | ACK delimiter                     | 1             | Must be recessive (1)                                                    |
-| End-of-frame (EOF)                | 7             | Must be recessive (1)                                                    |
-| Inter-frame spacing (IFS)         | 3             | Must be recessive (1)                                                    |
+| End of frame (EOF)                | 7             | Must be recessive (1)                                                    |
+| Inter frame spacing (IFS)         | 3             | Must be recessive (1)                                                    |
 
 - Data frame: a frame containing node data for transmission.
 - Remote frame: a frame requesting the transmission of a specific identifier.
@@ -114,7 +114,7 @@ The two identifier fields (A & B) combine to form a 29-bit identifier.
 
 Extended packets are like standard ones but with a larger space to hold IDs.extended packets use substitute remote request SRR instead of RTR with SSR set to 1. They’ll also have the IDE set to 1, and their packets will have an 18-bit identifier.
 
-CAN protocol reduces wiring and provides the ability to work in different electrical environments and ensures noise-free transmission. Traffic congestion is eliminated as the messages are transmitted based on their priority and it allows the entire network to meet the timing constraints. It provides for error-free transmission as each node can check for errors during the transmission of the message and send the error frame. But, CAN is like a basic flavor of protocols. many other protocols are developed by highlighting specific capabilities of CAN.
+CAN protocol reduces wiring and provides the ability to work in different electrical environments and ensures noise free transmission. Traffic congestion is eliminated as the messages are transmitted based on their priority and it allows the entire network to meet the timing constraints. It provides for error free transmission as each node can check for errors during the transmission of the message and send the error frame. But, CAN is like a basic flavor of protocols. many other protocols are developed by highlighting specific capabilities of CAN.
 
 #### Arbitration in CANBus
 
@@ -129,7 +129,7 @@ we should remember that it is not like any Master-slave communication, literally
 
 For example in a computer network connected with Ethernet the {CSMA/CD} carrier sense, multiple access with collision detection will be In charge if there is a collision it stops the transmission of data and starts again after some time.
 
-The CAN bus network arbitration is more like an updated version of Ethernet’s network arbitration. Non-Destructive collision detection makes it easier. In the case of two messages are pushed into the network at the same time one with the least arbitration ID will win over the other one and continues to transmit, now another one will wait for some time and starts transmitting again. 
+The CAN bus network arbitration is more like an updated version of Ethernet’s network arbitration. Non Destructive collision detection makes it easier. In the case of two messages are pushed into the network at the same time one with the least arbitration ID will win over the other one and continues to transmit, now another one will wait for some time and starts transmitting again. 
 
 the least arbitration ID denotes the message’s priority which is decided by the designer at the time of Designing the network, Message priority is very important in the case of an autonomous car, like the intrusion detection message should reach the breaking system ASAP within milliseconds.
 
@@ -151,7 +151,7 @@ One of the best alternatives to CAN bus is Ethernet TCP/IP. it also cannot provi
 We are already into data era and the maximum of 8 bytes data transmitting capability of CAN need a revamp. So, engineers came up with multiple protocols which are developed upon CAN bus specific to a particular network architecture type. Like, CANopen for Industrial robotics, CAN FD for higher data rates (up to 8 Mbits/sec), payload size up to 64 bytes and improved security via authentication.
 
 #### Conclusion
-The top benefits of using CAN Bus protocol are Low-cost implementation, completely centralized network, Extreme robust and efficient.On the other hand, it also comes short if we are looking more for security as CAN bus is not secure by design. 
+The top benefits of using CAN Bus protocol are Low cost implementation, completely centralized network, Extreme robust and efficient.On the other hand, it also comes short if we are looking more for security as CAN bus is not secure by design. 
 
 So, Automotive manufacturers are adding different network busses like LIN bus and CAN FD buses to improve the vehicle architecture more. But, ISO 11898 is not going to fade away any soon.
 
@@ -161,4 +161,4 @@ So, Automotive manufacturers are adding different network busses like LIN bus an
 * [Bit stuffing](<https://en.wikipedia.org/wiki/Bit_stuffing>)
 * [Remote Frame](https://en.wikipedia.org/wiki/CAN_bus#Remote_frame)
 
-I hope this blog post gave you a good high-level overview of CAN Bus protocol. If you are reading up to this point, you might be interested in Automotive security. This blog post aimed to give you an idea about CAN Bus protocol which is widely used in Automotive architecture. Going forward, i will try to add more intresting blogs like this one so, keep an eye on this blog page. I hope you enjoyed reading this as much as I enjoyed writing it :) - with <3 Kartheek Lade
+I hope this blog post gave you a good high level overview of CAN Bus protocol. If you are reading up to this point, you might be interested in Automotive security. This blog post aimed to give you an idea about CAN Bus protocol which is widely used in Automotive architecture. Going forward, i will try to add more intresting blogs like this one so, keep an eye on this blog page. I hope you enjoyed reading this as much as I enjoyed writing it :) made with <3 Kartheek Lade
