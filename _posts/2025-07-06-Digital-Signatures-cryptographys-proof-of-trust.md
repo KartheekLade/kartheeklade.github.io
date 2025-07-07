@@ -11,11 +11,11 @@ last_modified_at: 2025-07-07
 
 A digital signature is a cryptographic technique used to verify that a digital message or document:
   1. Was created by the claimed sender (authenticity), and
-  2. Has not been altered since it was signed (integrity).
+  2. Has not been altered since it was signed (integrity)
 
 It works using asymmetric cryptography the sender signs data using their private key, and anyone can verify the signature using the corresponding public key. If even one bit of the signed data changes, the signature becomes invalid. Think of it like a tamper evident seal on medicine, Only the manufacturer (private key holder) can apply it -> Anyone can verify its authenticity (public key) -> Any damage to the packaging (message alteration) breaks the seal except it's built on strong math and impossible to forge without the private key
 
-Unlike passwords or handwritten signatures, digital signatures are not guessable or reusable. Even a small change in the data results in a completely different signature, making tampering easy to detect. Digital signatures are widely used in secure email (PGP), software distribution, e-contracts, and blockchain systems.
+Unlike passwords or handwritten signatures, digital signatures are not guessable or reusable. Even a small change in the data results in a completely different signature, making tampering easy to detect. Digital signatures are widely used in secure email (PGP), software distribution, e-contracts, and blockchain systems
 
 
 #### How do they work
@@ -23,16 +23,16 @@ Unlike passwords or handwritten signatures, digital signatures are not guessable
 Digital signatures follow a three step process:
 
 1. *Hashing*
-   The sender applies a cryptographic hash function (e.g., SHA-256) to the original message. This produces a fixed size digest that represents the content uniquely.
+   The sender applies a cryptographic hash function (e.g., SHA-256) to the original message. This produces a fixed size digest that represents the content uniquely
 
 2. *Signing with Private Key*
-   The sender cryptographically signs the hash using their private key creating a *digital signature*. It is sent along with the original message.
+   The sender cryptographically signs the hash using their private key creating a *digital signature*. It is sent along with the original message
 
 3. *Verification with Public Key*
-   The receiver verifies the signature using the sender’s public key to retrieve the original hash. They also compute the hash of the received message.
+   The receiver verifies the signature using the sender’s public key to retrieve the original hash. They also compute the hash of the received message
 
-   * If the two hashes match, the signature is valid—the message is authentic and untampered.
-   * If they differ, either the message was altered, or the signature is not from the claimed sender.
+   * If the two hashes match, the signature is valid—the message is authentic and untampered
+   * If they differ, either the message was altered, or the signature is not from the claimed sender
 
 This mechanism ensures both authenticity and integrity, without requiring the sender and receiver to share any secret keys. The process can be illustrated as follows:
 
@@ -56,7 +56,7 @@ Three Key Steps:
   2. Signing: Private key signs the hash → signature
   3. Verification: Public key decrypts signature; hashes must match
 
-well, this ain't as simple as we mentioned above we would also need the full strength of trust, While this process verifies message integrity, it assumes one critical thing you already trust that the public key belongs to the sender. 
+well, this ain't as simple as we mentioned above we would also need the full strength of trust, While this process verifies message integrity, it assumes one critical thing you already trust that the public key belongs to the sender
 
 In reality, attackers could substitute their own key (a "man in the middle" attack). This is solved by PKI (Public Key Infrastructure) which verifies who owns that key by a system that binds identities to keys using digital certificates issued by trusted authorities. Here's how PKI integrates with digital signatures to establish trust:
 
@@ -110,10 +110,10 @@ flowchart TD
 ##### Trust Anchor: Root CA Must Be Pre Trusted
   You only trust IDs issued by governments your country recognizes. Similarly, your device only trusts Root CAs pre-installed in its "trust store."
 
-    - Trust Store: A list of Root CA certificates hardcoded in your OS/browser (e.g., Apple, Microsoft, Google manage these).  
-    - Example: If "GoDaddy Root CA" is in your trust store, you trust all certs signed by GoDaddy or its intermediates.  
+    - Trust Store: A list of Root CA certificates hardcoded in your OS/browser (e.g., Apple, Microsoft, Google manage these) 
+    - Example: If "GoDaddy Root CA" is in your trust store, you trust all certs signed by GoDaddy or its intermediates
  
-  So, Root CA's public key is pre installed in your device --> Any cert chain ending at this Root CA is automatically trusted. No need to manually verify every sender just trust the Root CA. 
+  So, Root CA's public key is pre installed in your device --> Any cert chain ending at this Root CA is automatically trusted. No need to manually verify every sender just trust the Root CA
 
 ##### Revocation Checks (CRL/OCSP) *(Critical)*  
 
