@@ -194,4 +194,4 @@ timeline
 
 In short, this system is what enables the HTTPS padlock you see in your browser ensuring that you're really communicating with a trusted website like *kartheeklade.com*, without having to manually verify its identity.
 
-I hope this blog post gave you a good overview of Digital Signatures & PKI. If you are reading up to this point, you might be interested in cyber security. Going forward, i will try to add more intresting blogs like this one so, keep an eye on this blog page. I hope you enjoyed reading this as much as I enjoyed writing it :) made with <3 Kartheek Lade
+I hope this blog post gave you a good overview of Digital Signatures & PKI. If you are reading up to this point, you might be interested in cyber security. Going forward, i will try to add more intresting blogs like this one so, keep an eye on this blog page. I hope you enjoyed reading this as much as I enjoyed writing it :) made with <3 Kartheek Lade  
